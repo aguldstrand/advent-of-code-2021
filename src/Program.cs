@@ -1,4 +1,6 @@
-﻿switch (args.FirstOrDefault())
+﻿using System.Linq;
+
+switch (args.FirstOrDefault())
 {
     case "1.1":
         await Days.One.Parts.One.Run();
@@ -22,5 +24,13 @@
 
     case "3.2":
         await Days.Three.Parts.Two.Run();
+        break;
+
+    case "4.1":
+        await Days.Four.Parts.One.Run();
+        break;
+
+    case "4.2":
+        await Days.Four.Parts.Two.Run();
         break;
 }
